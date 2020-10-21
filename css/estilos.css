@@ -1,4 +1,4 @@
-/*INDEX inicio*/
+/*--------------------------------------------------INDEX inicio*/
 body{
     /* background-color: red; */
     font-family: 'Arial Narrow', Arial, sans-serif;
@@ -97,13 +97,11 @@ nav ul li a:hover{
     background-color: green;
     border-radius: 15px;
     opacity: .5;
-
 }
 
 nav ul li a.activo{
     background-color: green;
     border-radius: 15px;
-
 }
 
 footer{
@@ -114,7 +112,6 @@ footer{
     padding: 0.2em;
     margin-top: 2em;
     text-align: center;
-
 }
 
 .holder{
@@ -134,106 +131,69 @@ h2{
 .right{
     float: right;
 }
-/*INDEX fin*/
+/*--------------------------------------------------INDEX fin*/
 
-/*HOME inicio*/
+/*--------------------------------------------------HOME inicio*/
 .home{
     overflow: hidden;
 }
 
-#intro{
-    background-image: url(../img/logo7.jpg);
-    background-size: cover;
+#homeintro{
     text-align: center;
     margin: 0 auto;
     max-height: 800px;
     width: 100%;
 }
 
-#bloque-img1{
-    background: url(../img/detalle3.jpg) 60% fixed;
-    background-size: 67%;
-    height: 700px;
-    width: 90%;
-    margin: 0 auto;
+#homeintro h2{
+    padding: .5em 0;
+    margin-top: 1em;
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    font-size: 3em;
 }
-
-#bloque-img2{
-    background: url(../img/paisaje1.jpg) 67% fixed;
-    background-size: 70%;
-    height: 700px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-#bloque-img3{
-    background: url(../img/mural2.jpg) 60% fixed;
-    background-size: 67%;
-    height: 700px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.texto{
-    color: #ddd;
-    padding: 30px;
-    text-align: center;
-}
-.texto1 h2{
-    margin: 0 0 .5em 0;
-}
-.texto1 h3{
+.cabezal h3{
+    padding-top: 1em;
     font-style: italic;
     font-weight: 100;
-    /* background-color: hotpink; */
-    padding: 0;
-    margin: 0;
     align-items: center;
-    animation: none;
 }
 
-.texto1{
+.cabezal{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: whitesmoke;
-    /* color: black; */
-    padding: 1em 0 2em 0;
+    padding: 0 0 2em 0;
     width: 100%;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-
-    animation-name: bienvenidos;
-    animation-duration: 2s;
-    animation-fill-mode: forwards; /*se queda como finaliza la animacion*/
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: bienvenidos 2s ease;
+    animation-fill-mode: forwards; 
 }
 
 @keyframes bienvenidos{
-    from{
-        background-color: white;
-    }
-
-    to{
-        background-color: black;
-        /* background-color: rgba(12, 243, 70, 0.864); */
-    }
+    from{background-color: white;}
+    to{background-color: green;} 
 }
 
-.bloque{
-    background-color: black;
-    margin: 0 auto;
-    border-radius: 50px;
+.mov{
+    background-color: none;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    margin-top: .5em;
 }
 
+.icon-bike{
+    margin: .3em;
+    animation-name: riding;
+    animation-duration:  2s;
+}
 
-@font-face {
-    font-family: 'icomoon';
-    src:  url('../favicon/icomoon/fonts/icomoon.eot?x5a3lt');
-    src:  url('../favicon/icomoon/fonts/icomoon.eot?x5a3lt#iefix') format('embedded-opentype'),
-      url('../favicon/icomoon/fonts/icomoon.ttf?x5a3lt') format('truetype'),
-      url('../favicon/icomoon/fonts/icomoon.woff?x5a3lt') format('woff'),
-      url('../favicon/icomoon/fonts/icomoon.svg?x5a3lt#icomoon') format('svg');
-    font-weight: lighter;
-    font-style: normal;
-    font-display: block;
+@keyframes riding{
+    from{margin-left: 100%;
+        width: 100%;}
+    to{margin-left: 0;
+       width: 100%;}
 }
 
 .iconos{
@@ -274,18 +234,6 @@ h2{
     z-index: 10;
 }
 
-.icono.icon-power:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.icono.icon-power:hover::after{
-    opacity: 1;
-    top: 2em;
-    left: -2em;
-}
-
-
 .icono.icon-recycle::after{
     content: attr(href);
     font-size: 0.7em;
@@ -299,18 +247,6 @@ h2{
     transform: translateX(12%);
     z-index: 10;
 }
-
-.icono.icon-recycle:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.icono.icon-recycle:hover::after{
-    opacity: 1;
-    top: 2em;
-    left: -2em;
-}
-
 
 .icono.icon-coin-dollar::after{
     content: attr(href);
@@ -326,53 +262,62 @@ h2{
     z-index: 10;
 }
 
+.icono.icon-power:hover,
+.icono.icon-recycle:hover,
 .icono.icon-coin-dollar:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 
+.icono.icon-power:hover::after,
+.icono.icon-recycle:hover::after,
 .icono.icon-coin-dollar:hover::after{
     opacity: 1;
     top: 2em;
     left: -2em;
 }
 
-.mov{
-    background-color: none;
-    border-top-style: dotted;
-    border-bottom-style: dotted;
-   margin-top: .5em;
-    
+.texto{
+    color: #ddd;
+    padding: 30px;
+    text-align: center;
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
-.icon-bike{
-    margin: .3em;
-    animation-name: ederecha;
-    animation-duration:  2s;
+#parallax02{
+    background: url(../img/detalle3.jpg) 60% fixed;
+    background-size: 67%;
+    height: 700px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-@keyframes ederecha{
-    from{
-        margin-left: 100%;
-        width: 100%;
-    }
-
-    to{
-        margin-left: 0;
-        width: 100%;
-    }
+#parallax03{
+    background: url(../img/paisaje1.jpg) 67% fixed;
+    background-size: 70%;
+    height: 700px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-/*HOME fin*/
+#parallax04{
+    background: url(../img/mural2.jpg) 60% fixed;
+    background-size: 67%;
+    height: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+/*--------------------------------------------------HOME fin*/
 
-/*NOSOTROS inicio*/
+/*--------------------------------------------------NOSOTROS inicio*/
 .nosotros{
     /* background-color: lightblue; */
     display: flex;
     flex-direction: column;
 }
 
-.historia,
 .staff{
     font-weight: 500;
     padding: 1em;
@@ -391,9 +336,18 @@ h2{
     margin: 0;
 }
 
-.persona, .descripcion{
+.descripcion, .persona{
     width: 50%;
     box-sizing: border-box;
+}
+
+.descripcion{
+    margin: 0 1em;
+    text-align: end;
+}
+
+.descripcion h4{
+    font-style: italic;
 }
 
 .persona figure{
@@ -406,30 +360,13 @@ h2{
     box-shadow: 0 0 5px rgba(0,0,0,0.5); 
     width: 100%;
 }
+/*--------------------------------------------------NOSOTROS fin*/
 
-.persona h5, .persona h6{
-    text-align: center;
-    font-weight: normal;
-    color: #2e64a1;
-    margin: 0 1em;
+/*--------------------------------------------------EXPERIENCIA inicio*/
+.experiencia{
+    overflow: hidden;
 }
 
-.descripcion{
-    margin: 0 1em;
-    text-align: end;
-}
-
-.descripcion h4{
-    font-style: italic;
-}
-/* 
-.descripcion p{
-    font-size: 0.7em;
-    color: #444;
-} */
-/*NOSOTROS fin*/
-
-/*EXPERIENCIA inicio*/
 .experiencia h3{
     font-weight: 600;
 }
@@ -445,20 +382,14 @@ h2{
 }
 
 @keyframes bike{
-    from{
-        margin-left: 10em;
-        width: 100%;
-    }
-
-    to{
-        margin-left: 5em;
-        width: 100%;
-    }
+    from{margin-left: 10em;
+        width: 100%;}
+    to{margin-left: 5em;
+        width: 100%;}
 }
 
 .video{
-    overflow: hidden;
-    width: 50%;
+     width: 50%;
 }
 
 .videobike, .videobikea{
@@ -472,16 +403,10 @@ h2{
     width: 85%;
     display: flex;
     align-items: center;
-    background-color:greenyellow;
 }
-/*EXPERIENCIA fin*/
+/*--------------------------------------------------EXPERIENCIA fin*/
 
-/*GALERIA inicio*/
-.galeria h3{
-    font-style: italic;
-    margin: 1.1em 0 0.5em 0;
-}
-
+/*--------------------------------------------------GALERIA inicio*/
 .galeria{
     color: whitesmoke;
     background-color: black;
@@ -489,8 +414,20 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
     padding: 0 1em 1em 1em;
+}
+
+.galeria h3{
+    font-style: italic;
+    margin: 1.5em 0 .02em 0;
+}
+
+.galeria .bloque01{
+    overflow: hidden;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
 }
 
 .galeria .bloque02,
@@ -498,16 +435,6 @@ h2{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    /* background-color: greenyellow; */
-    /* border: 1px solid black; */
-}
-
-.bloque01{
-    overflow: hidden;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
 }
 
 .bloque02 .foto,
@@ -517,11 +444,9 @@ h2{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    background-color: black;
     margin: .5em 0 0 .5em;
     border: 1px solid black;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5) ;
 }
 
 .bloque02,
@@ -530,22 +455,15 @@ h2{
     display: flex;
     flex-flow: row wrap;
     gap: 1em;
-    /* background-color:red; */
 }
 
 .galeria .foto img{
     width: 100%;
-    transition: all 0.5s ease;
 }
+/*--------------------------------------------------GALERIA fin*/
 
-/* .galeria .foto:hover img{
-    width: 150%;
-} */
-/*GALERIA fin*/
-
-/*CATALOGO inicio*/
+/*--------------------------------------------------CATALOGO inicio*/
 .especificaciones{
-    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -572,46 +490,27 @@ h2{
 }
 
 @keyframes izquierda{
-    from{
-        margin-left: 100%;
-        width: 100%;
-    }
-
-    to{
-        margin-left: 0;
-        width: 100%;
-    }
+    from{margin-left: 100%;
+        width: 100%;}
+    to{margin-left: 0;
+        width: 100%;}
 }
 
 .modelo02{
     animation-name: derecha;
     animation-duration:  1s;
 }
+
 @keyframes derecha{
-    from{
-        margin-left: -100%;
-        width: 100%;
-    }
-
-    to{
-        margin-left: 0;
-        width: 100%;
-    }
-}
-
-.cambios{
-font-weight: bold;
-background-color: palegoldenrod;
+    from{margin-left: -100%;
+        width: 100%;}
+    to{ margin-left: 0;
+        width: 100%;}
 }
 
 .bb73 h2, .bb273 h2{
     text-align: center;
     color: green;
-}
-
-.bb73, .bb73img{
-    width: 50%;
-    box-sizing: border-box;
 }
 
 .bb73, .bb273{
@@ -623,13 +522,17 @@ background-color: palegoldenrod;
     width: 95%;
 }
 
+.cambios{
+    font-weight: bold;
+    background-color: palegoldenrod;
+}
+
 .especificaciones .detalle{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
     gap: 1em;
     justify-content: space-evenly;
-    border: 1px solid black;
     padding: 1em;
     background-color:black;
 }
@@ -638,8 +541,6 @@ background-color: palegoldenrod;
     overflow: hidden;
     width: 70%;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     margin: .5em 0 0 .5em;
     border: 1px solid black;
     border-radius: 5px;
@@ -654,6 +555,7 @@ background-color: palegoldenrod;
 .tecnicas ul li{
     list-style: none;
 }
+
 .tecnicas .icotec{
     text-decoration: none;
 }
@@ -662,17 +564,24 @@ background-color: palegoldenrod;
     color: green;
     font-weight: bold;
     font-style: italic;
-
 }
-/*CATALOGO fin*/
+/*--------------------------------------------------CATALOGO fin*/
 
-/*CONTACTO inicio*/
+/*--------------------------------------------------CONTACTO inicio*/
 .contactanos{
     overflow: hidden;
+    animation: medios 2s ease;
+    animation-fill-mode: forwards; /*se queda como finaliza la animacion*/
+}
+
+@keyframes medios{
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 
 .contactanos h2,
-.contactanos h3{
+.contactanos h3,
+.pagos{
     text-align: center;
 }
 
@@ -681,23 +590,29 @@ background-color: palegoldenrod;
     font-weight: 500;
 }
 
-.columna h2{
+.pagos{
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 1px 1px 5px black;
     font-size: 1.5em;
+    animation: medios 3s ease;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pago{
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 
 .columna{
-    /* background-color: hotpink; */
-    width: 50%;
+     width: 50%;
     box-sizing: border-box;
     padding: 0.6em;
 }
 
 .columna.left{
     border-right: 1px solid black;
-}
-
-.columna.left p{
-    font-size: 1em;
 }
 
 .formulario label{
@@ -714,6 +629,7 @@ background-color: palegoldenrod;
     border: 1px solid#999;
     padding: 0.4em 0.6em;
     font-size: 0.8em;
+    font-style: italic;
     width: 70%;
 }
 
@@ -727,16 +643,11 @@ background-color: palegoldenrod;
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
     color: whitesmoke;
     font-size: 1em;
+    font-style: normal;
     width: auto;
     margin-right: 3.5em;
     float: right;
     cursor: pointer;
-}
-
-/*para que el botón enviar quede al centro tendria que agregar una class a <p>*/
-.formulario .acciones{
-    text-align: center;
-    /* background-color: red; */
 }
 
 .columna.right ul li{
@@ -748,19 +659,8 @@ background-color: palegoldenrod;
     margin: 1em 0 1em 6.5em;
 }
 
-.columna.right .iconocon{
-    text-decoration: none;
-}
-
 .columna.right .redes h3{
     margin: 3em 0 0 0;
-}
-
-
-.columna.right .sociales ul li{
-    display: inline-flex;
-    flex-flow: row nowrap;
-    margin-left: 1em;
 }
 
 .columna.right .sociales{
@@ -770,12 +670,21 @@ background-color: palegoldenrod;
     margin: 1em;
 }
 
+.columna.right .sociales ul li{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    margin-left: 1em;
+}
+
+
 .columna.right .sociales a{
     display: flex;
     text-align: center;
     margin: 0;
+    text-decoration: none;
 }
-
+/*--------------------------------------------------CONTACTO fin*/
+/*--------------------------------------------------ICONOS GENERAL Inicio*/
 
 @font-face {
     font-family: 'icomoon';
@@ -791,15 +700,14 @@ background-color: palegoldenrod;
 
 .icon-bike:before,
 .icon-power:before,
-.icon-e-bike:before,
 .icon-recycle:before,
 .icon-coin-dollar:before,
-.icon-facebook:before,
+.icon-documents:before,
+.icon-mobile:before,
+.icon-whatsapp:before,
 .icon-gmail:before,
 .icon-instagram:before,
-.icon-whatsapp:before,
-.icon-mobile:before,
-.icon-documents{
+.icon-facebook:before{
     font-family: 'icomoon';
     margin-right: 10px;
     display: inline-block;
@@ -816,12 +724,6 @@ background-color: palegoldenrod;
     font-size: 2.2em;
 }
 
-.icon-e-bike:before {
-    content: "\e906";
-    color: whitesmoke;
-    font-size: 1.5em;
-}
-  
 .icon-recycle:before {
     content: "\e907";
     color: whitesmoke;
@@ -839,12 +741,17 @@ background-color: palegoldenrod;
     margin-right: 1em;
     font-weight: 600;
     font-size: 2em;
+    color: black;
 }
 
-.icon-facebook:before {
-    content: "\e902";
-    color: #1877f2;
-    font-size: 2em;
+.icon-mobile:before {
+    content: "\e958";
+    color: green;
+}
+
+.icon-whatsapp:before {
+    content: "\e904";
+    color: #25d366;
 }
 
 .icon-gmail:before {
@@ -858,13 +765,9 @@ background-color: palegoldenrod;
     font-size: 2em;
 }
 
-.icon-whatsapp:before {
-    content: "\e904";
-    color: #25d366;
+.icon-facebook:before {
+    content: "\e902";
+    color: #1877f2;
+    font-size: 2em;
 }
-
-.icon-mobile:before {
-    content: "\e958";
-    color: green;
-}
-/*CONTACTO fin*/
+/*--------------------------------------------------ICONOS GENERAL fin*/

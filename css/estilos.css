@@ -1,4 +1,4 @@
-/*--------------------------------------------------INDEX inicio*/
+/*---------------------------------------------------------------------------INDEX inicio*/
 body{
     /* background-color: red; */
     font-family: 'Arial Narrow', Arial, sans-serif;
@@ -14,14 +14,12 @@ header{
 }
 
 .encabezado{
-    /* background-color: black; */
     max-width: 960px;       /*Responsive: agregue max ancho*/
     display: flex;
     flex-flow: row nowrap;
 }
 
 .logo{
-    /* background-color:black; */
     width: 40%;
     display: flex;
     flex-flow: row nowrap;
@@ -81,7 +79,6 @@ nav ul li{
 }
 
 nav ul li a{
-    /* background-color: black; */
     color: whitesmoke;
     width: 100%;
     padding: 0.4em;
@@ -131,9 +128,8 @@ h2{
 .right{
     float: right;
 }
-/*--------------------------------------------------INDEX fin*/
-
-/*--------------------------------------------------HOME inicio*/
+/*---------------------------------------------------------------------------INDEX fin*/
+/*---------------------------------------------------------------------------HOME inicio*/
 .home{
     overflow: hidden;
 }
@@ -228,7 +224,7 @@ h2{
     position: absolute;
     top: 0; 
     left: 0;
-    opacity: 0; /*oculta el elemento*/
+    opacity: 0;
     transition: all 0.1s ease;
     transform: translateX(15%);
     z-index: 10;
@@ -242,7 +238,7 @@ h2{
     position: absolute;
     top: 0; 
     left: 0;
-    opacity: 0; /*oculta el elemento*/
+    opacity: 0;
     transition: all 0.1s ease;
     transform: translateX(12%);
     z-index: 10;
@@ -256,7 +252,7 @@ h2{
     position: absolute;
     top: 0; 
     left: 0;
-    opacity: 0; /*oculta el elemento*/
+    opacity: 0;
     transition: all 0.1s ease;
     transform: translateX(5%);
     z-index: 10;
@@ -309,9 +305,8 @@ h2{
     width: 90%;
     margin: 0 auto;
 }
-/*--------------------------------------------------HOME fin*/
-
-/*--------------------------------------------------NOSOTROS inicio*/
+/*---------------------------------------------------------------------------HOME fin*/
+/*---------------------------------------------------------------------------NOSOTROS inicio*/
 .nosotros{
     /* background-color: lightblue; */
     display: flex;
@@ -360,9 +355,8 @@ h2{
     box-shadow: 0 0 5px rgba(0,0,0,0.5); 
     width: 100%;
 }
-/*--------------------------------------------------NOSOTROS fin*/
-
-/*--------------------------------------------------EXPERIENCIA inicio*/
+/*---------------------------------------------------------------------------NOSOTROS fin*/
+/*---------------------------------------------------------------------------EXPERIENCIA inicio*/
 .experiencia{
     overflow: hidden;
 }
@@ -404,9 +398,8 @@ h2{
     display: flex;
     align-items: center;
 }
-/*--------------------------------------------------EXPERIENCIA fin*/
-
-/*--------------------------------------------------GALERIA inicio*/
+/*---------------------------------------------------------------------------EXPERIENCIA fin*/
+/*---------------------------------------------------------------------------GALERIA inicio*/
 .galeria{
     color: whitesmoke;
     background-color: black;
@@ -460,9 +453,8 @@ h2{
 .galeria .foto img{
     width: 100%;
 }
-/*--------------------------------------------------GALERIA fin*/
-
-/*--------------------------------------------------CATALOGO inicio*/
+/*---------------------------------------------------------------------------GALERIA fin*/
+/*---------------------------------------------------------------------------CATALOGO inicio*/
 .especificaciones{
     display: flex;
     flex-direction: column;
@@ -565,9 +557,8 @@ h2{
     font-weight: bold;
     font-style: italic;
 }
-/*--------------------------------------------------CATALOGO fin*/
-
-/*--------------------------------------------------CONTACTO inicio*/
+/*---------------------------------------------------------------------------CATALOGO fin*/
+/*---------------------------------------------------------------------------CONTACTO inicio*/
 .contactanos{
     overflow: hidden;
     animation: medios 2s ease;
@@ -619,7 +610,7 @@ h2{
     /* background-color: blue; */
     vertical-align: top;
     width: 15%;
-    display: inline-block; /*inline-block (al lado) solo block (abajo)*/
+    display: inline-block;
     font-size: 1em;
 }
 
@@ -676,16 +667,14 @@ h2{
     margin-left: 1em;
 }
 
-
 .columna.right .sociales a{
     display: flex;
     text-align: center;
     margin: 0;
     text-decoration: none;
 }
-/*--------------------------------------------------CONTACTO fin*/
-/*--------------------------------------------------ICONOS GENERAL Inicio*/
-
+/*---------------------------------------------------------------------------CONTACTO fin*/
+/*---------------------------------------------------------------------------ICONOS GENERAL inicio*/
 @font-face {
     font-family: 'icomoon';
     src:  url('../favicon/fonts/icomoon.eot?hp79ja');
@@ -702,6 +691,7 @@ h2{
 .icon-power:before,
 .icon-recycle:before,
 .icon-coin-dollar:before,
+.icon-arrow-up-circle:before,
 .icon-documents:before,
 .icon-mobile:before,
 .icon-whatsapp:before,
@@ -736,6 +726,12 @@ h2{
     font-size: 2em;
 }
 
+.icon-arrow-up-circle:before{
+    content: "\e90a";
+    color: green;
+    text-shadow: 1px 1px 1px black;
+    font-size: 3em;
+}
 .icon-documents:before {
     content: "\e006";
     margin-right: 1em;
@@ -770,4 +766,12 @@ h2{
     color: #1877f2;
     font-size: 2em;
 }
-/*--------------------------------------------------ICONOS GENERAL fin*/
+/*---------------------------------------------------------------------------ICONOS GENERAL fin*/
+/*---------------------------------------------------------------------------BOTON SUBIR GENERAL inicio*/
+.up .icon-arrow-up-circle{
+    clear: both;
+    margin-left: 90%;
+    width: 100%;
+    cursor: pointer;
+}
+/*---------------------------------------------------------------------------BOTON SUBIR GENERAL fin*/

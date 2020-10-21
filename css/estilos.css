@@ -1,0 +1,870 @@
+/*INDEX inicio*/
+body{
+    /* background-color: red; */
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    padding: .5em 0;
+}
+
+.encabezado{
+    /* background-color: black; */
+    max-width: 960px;       /*Responsive: agregue max ancho*/
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.logo{
+    /* background-color:black; */
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.logo img{
+    /* background-color: turquoise; */
+    width: 20%;
+    border-top-left-radius: 140%;
+    border-top-right-radius: 140%;
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+.logo .bauten{
+    display: inline-flex;
+    flex-direction: column;
+    /* background-color: tomato; */
+    width: 78%;
+    color: whitesmoke;
+}
+
+.logo h1{
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+.logo .ebike{
+    /* background-color: violet; */
+    font-size: .9em;
+}
+
+.botonera{
+    /* background-color:orange; */
+    width: 60%;
+    padding: .5em 0;
+}
+
+nav ul{
+    /* background-color: red*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li{
+    /* background-color: greenyellow; */
+    display: flex;
+    width: 110px;
+    border-radius: 15px;
+}
+
+nav ul li a{
+    /* background-color: black; */
+    color: whitesmoke;
+    width: 100%;
+    padding: 0.4em;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+nav ul li a:hover{
+    background-color: green;
+    border-radius: 15px;
+    opacity: .5;
+
+}
+
+nav ul li a.activo{
+    background-color: green;
+    border-radius: 15px;
+
+}
+
+footer{
+    overflow: hidden;
+    background-color: rgba(211, 211, 211, 0.474);
+    color: rgba(0,0,0,0.4);
+    clear: both;
+    padding: 0.2em;
+    margin-top: 2em;
+    text-align: center;
+
+}
+
+.holder{
+    max-width: 960px;    /*RESPONSIVE: Agregue max-*/
+    margin: 0 auto;
+    /* background-color: yellow; */
+}
+
+h2{
+    font-size: 2em;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+/*INDEX fin*/
+
+/*HOME inicio*/
+.home{
+    overflow: hidden;
+}
+
+#intro{
+    background-image: url(../img/logo7.jpg);
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    max-height: 800px;
+    width: 100%;
+}
+
+#bloque-img1{
+    background: url(../img/detalle3.jpg) 60% fixed;
+    background-size: 67%;
+    height: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#bloque-img2{
+    background: url(../img/paisaje1.jpg) 67% fixed;
+    background-size: 70%;
+    height: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#bloque-img3{
+    background: url(../img/mural2.jpg) 60% fixed;
+    background-size: 67%;
+    height: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.texto{
+    color: #ddd;
+    padding: 30px;
+    text-align: center;
+}
+.texto1 h2{
+    margin: 0 0 .5em 0;
+}
+.texto1 h3{
+    font-style: italic;
+    font-weight: 100;
+    /* background-color: hotpink; */
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    animation: none;
+}
+
+.texto1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    /* color: black; */
+    padding: 1em 0 2em 0;
+    width: 100%;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    animation-name: bienvenidos;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; /*se queda como finaliza la animacion*/
+}
+
+@keyframes bienvenidos{
+    from{
+        background-color: white;
+    }
+
+    to{
+        background-color: black;
+        /* background-color: rgba(12, 243, 70, 0.864); */
+    }
+}
+
+.bloque{
+    background-color: black;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../favicon/icomoon/fonts/icomoon.eot?x5a3lt');
+    src:  url('../favicon/icomoon/fonts/icomoon.eot?x5a3lt#iefix') format('embedded-opentype'),
+      url('../favicon/icomoon/fonts/icomoon.ttf?x5a3lt') format('truetype'),
+      url('../favicon/icomoon/fonts/icomoon.woff?x5a3lt') format('woff'),
+      url('../favicon/icomoon/fonts/icomoon.svg?x5a3lt#icomoon') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: block;
+}
+
+.iconos{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+}
+
+.icono{
+    margin: 0 2em;
+    transition: all 0.5s ease;
+}
+
+.icono:hover{
+    font-size: 1.2em;
+}
+
+.icono.icon-power,
+.icono.icon-recycle,
+.icono.icon-coin-dollar{
+    position: relative;
+}
+
+.icono.icon-power::after{
+    content: attr(href);
+    font-size: 0.7em;
+    color: whitesmoke;
+    padding: 0.3em 0.5em;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    opacity: 0; /*oculta el elemento*/
+    transition: all 0.1s ease;
+    transform: translateX(15%);
+    z-index: 10;
+}
+
+.icono.icon-power:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icono.icon-power:hover::after{
+    opacity: 1;
+    top: 2em;
+    left: -2em;
+}
+
+
+.icono.icon-recycle::after{
+    content: attr(href);
+    font-size: 0.7em;
+    color: whitesmoke;
+    padding: 0.3em 0.5em;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    opacity: 0; /*oculta el elemento*/
+    transition: all 0.1s ease;
+    transform: translateX(12%);
+    z-index: 10;
+}
+
+.icono.icon-recycle:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icono.icon-recycle:hover::after{
+    opacity: 1;
+    top: 2em;
+    left: -2em;
+}
+
+
+.icono.icon-coin-dollar::after{
+    content: attr(href);
+    font-size: 0.7em;
+    color: whitesmoke;
+    padding: 0.3em 0.5em;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    opacity: 0; /*oculta el elemento*/
+    transition: all 0.1s ease;
+    transform: translateX(5%);
+    z-index: 10;
+}
+
+.icono.icon-coin-dollar:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.icono.icon-coin-dollar:hover::after{
+    opacity: 1;
+    top: 2em;
+    left: -2em;
+}
+
+.mov{
+    background-color: none;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+   margin-top: .5em;
+    
+}
+
+.icon-bike{
+    margin: .3em;
+    animation-name: ederecha;
+    animation-duration:  2s;
+}
+
+@keyframes ederecha{
+    from{
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/*HOME fin*/
+
+/*NOSOTROS inicio*/
+.nosotros{
+    /* background-color: lightblue; */
+    display: flex;
+    flex-direction: column;
+}
+
+.historia,
+.staff{
+    font-weight: 500;
+    padding: 1em;
+}
+
+.nosotros h2{
+    border-bottom: 1px solid black;
+}
+
+.personas{
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.persona, .descripcion{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.persona figure{
+    text-align: center;
+    /* background-color: yellow; */
+}
+
+.persona figure img{
+    border-radius: 25%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); 
+    width: 100%;
+}
+
+.persona h5, .persona h6{
+    text-align: center;
+    font-weight: normal;
+    color: #2e64a1;
+    margin: 0 1em;
+}
+
+.descripcion{
+    margin: 0 1em;
+    text-align: end;
+}
+
+.descripcion h4{
+    font-style: italic;
+}
+/* 
+.descripcion p{
+    font-size: 0.7em;
+    color: #444;
+} */
+/*NOSOTROS fin*/
+
+/*EXPERIENCIA inicio*/
+.experiencia h3{
+    font-weight: 600;
+}
+
+.bikeys{
+    font-style: italic;
+    font-family: fantasy;
+    color: green;
+    font-size: 3em;
+    margin-left: 5em;
+    animation-name: bike;
+    animation-duration: 2s;
+}
+
+@keyframes bike{
+    from{
+        margin-left: 10em;
+        width: 100%;
+    }
+
+    to{
+        margin-left: 5em;
+        width: 100%;
+    }
+}
+
+.video{
+    overflow: hidden;
+    width: 50%;
+}
+
+.videobike, .videobikea{
+    width: 90%;
+    border-radius: 5%;
+    border: solid black .02em;
+    margin: 1em 0 1em 2em;
+}
+
+.videobikea{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    background-color:greenyellow;
+}
+/*EXPERIENCIA fin*/
+
+/*GALERIA inicio*/
+.galeria h3{
+    font-style: italic;
+    margin: 1.1em 0 0.5em 0;
+}
+
+.galeria{
+    color: whitesmoke;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0 1em 1em 1em;
+}
+
+.galeria .bloque02,
+.galeria .bloque03{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: greenyellow; */
+    /* border: 1px solid black; */
+}
+
+.bloque01{
+    overflow: hidden;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.bloque02 .foto,
+.bloque03 .foto{
+    overflow: hidden;
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: black;
+    margin: .5em 0 0 .5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5) ;
+}
+
+.bloque02,
+.bloque03{
+    width: 29%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    /* background-color:red; */
+}
+
+.galeria .foto img{
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+/* .galeria .foto:hover img{
+    width: 150%;
+} */
+/*GALERIA fin*/
+
+/*CATALOGO inicio*/
+.especificaciones{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.especificaciones h2{
+    margin: .5em 0;
+}
+
+.modelo01, .modelo02{
+    overflow: hidden;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid black;
+}
+
+.modelo01{
+    animation-name: izquierda;
+    animation-duration: 1s;
+}
+
+@keyframes izquierda{
+    from{
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.modelo02{
+    animation-name: derecha;
+    animation-duration:  1s;
+}
+@keyframes derecha{
+    from{
+        margin-left: -100%;
+        width: 100%;
+    }
+
+    to{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.cambios{
+font-weight: bold;
+background-color: palegoldenrod;
+}
+
+.bb73 h2, .bb273 h2{
+    text-align: center;
+    color: green;
+}
+
+.bb73, .bb73img{
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.bb73, .bb273{
+    text-align: start;
+}
+
+.bb73img img, .bb273img img{
+    border-radius: 5%;
+    width: 95%;
+}
+
+.especificaciones .detalle{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    padding: 1em;
+    background-color:black;
+}
+
+.detalle .foto{
+    overflow: hidden;
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: .5em 0 0 .5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5) ;
+}
+
+.detalle .foto img{
+    width: 100%;
+    margin: auto;
+}
+
+.tecnicas ul li{
+    list-style: none;
+}
+.tecnicas .icotec{
+    text-decoration: none;
+}
+
+.tecnicas .eco{
+    color: green;
+    font-weight: bold;
+    font-style: italic;
+
+}
+/*CATALOGO fin*/
+
+/*CONTACTO inicio*/
+.contactanos{
+    overflow: hidden;
+}
+
+.contactanos h2,
+.contactanos h3{
+    text-align: center;
+}
+
+.contactanos h2{
+    color: green;
+    font-weight: 500;
+}
+
+.columna h2{
+    font-size: 1.5em;
+}
+
+.columna{
+    /* background-color: hotpink; */
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.6em;
+}
+
+.columna.left{
+    border-right: 1px solid black;
+}
+
+.columna.left p{
+    font-size: 1em;
+}
+
+.formulario label{
+    /* background-color: blue; */
+    vertical-align: top;
+    width: 15%;
+    display: inline-block; /*inline-block (al lado) solo block (abajo)*/
+    font-size: 1em;
+}
+
+.formulario input, .formulario textarea{
+    background-color: rgba(12, 243, 70, 0.097);
+    border-radius: 5px;
+    border: 1px solid#999;
+    padding: 0.4em 0.6em;
+    font-size: 0.8em;
+    width: 70%;
+}
+
+.formulario textarea{
+    height: 10em;
+    resize: none;
+}
+
+.formulario input[type="submit"]{
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    color: whitesmoke;
+    font-size: 1em;
+    width: auto;
+    margin-right: 3.5em;
+    float: right;
+    cursor: pointer;
+}
+
+/*para que el botón enviar quede al centro tendria que agregar una class a <p>*/
+.formulario .acciones{
+    text-align: center;
+    /* background-color: red; */
+}
+
+.columna.right ul li{
+    font-size: 1em;
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 1em 0 1em 6.5em;
+}
+
+.columna.right .iconocon{
+    text-decoration: none;
+}
+
+.columna.right .redes h3{
+    margin: 3em 0 0 0;
+}
+
+
+.columna.right .sociales ul li{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    margin-left: 1em;
+}
+
+.columna.right .sociales{
+    background-color: rgba(12, 243, 70, 0.097);;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin: 1em;
+}
+
+.columna.right .sociales a{
+    display: flex;
+    text-align: center;
+    margin: 0;
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../favicon/fonts/icomoon.eot?hp79ja');
+    src:  url('../favicon/fonts/icomoon.eot?hp79ja#iefix') format('embedded-opentype'),
+      url('../favicon/fonts/icomoon.ttf?hp79ja') format('truetype'),
+      url('../favicon/fonts/icomoon.woff?hp79ja') format('woff'),
+      url('../favicon/fonts/icomoon.svg?hp79ja#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: inline-block;
+}
+
+.icon-bike:before,
+.icon-power:before,
+.icon-e-bike:before,
+.icon-recycle:before,
+.icon-coin-dollar:before,
+.icon-facebook:before,
+.icon-gmail:before,
+.icon-instagram:before,
+.icon-whatsapp:before,
+.icon-mobile:before,
+.icon-documents{
+    font-family: 'icomoon';
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.icon-bike:before {
+    content: "\e042";
+    font-weight: 900;
+}
+
+.icon-power:before {
+    content: "\e9b7";
+    color: whitesmoke;
+    font-size: 2.2em;
+}
+
+.icon-e-bike:before {
+    content: "\e906";
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+  
+.icon-recycle:before {
+    content: "\e907";
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+.icon-coin-dollar:before {
+    content: "\e93b";
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+.icon-documents:before {
+    content: "\e006";
+    margin-right: 1em;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.icon-facebook:before {
+    content: "\e902";
+    color: #1877f2;
+    font-size: 2em;
+}
+
+.icon-gmail:before {
+    content: "\e903";
+    color: #d14836;
+}
+
+.icon-instagram:before {
+    content: "\e905";
+    color: #e4405f;
+    font-size: 2em;
+}
+
+.icon-whatsapp:before {
+    content: "\e904";
+    color: #25d366;
+}
+
+.icon-mobile:before {
+    content: "\e958";
+    color: green;
+}
+/*CONTACTO fin*/

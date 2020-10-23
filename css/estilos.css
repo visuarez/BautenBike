@@ -11,6 +11,7 @@ header{
     display: flex;
     justify-content: center;
     padding: .5em 0;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .encabezado{
@@ -189,7 +190,7 @@ h2{
 .cabezal{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: whitesmoke;
-    padding: 0 0 2em 0;
+    padding: 0 0 .5em 0;
     max-width: 100%;    /*RESPONSIVE: Agregue max-*/
     border-radius: 5px;
     animation: bienvenidos 2s ease;
@@ -228,78 +229,29 @@ h2{
     justify-content: center;
     align-items: center;
     padding-top: 1.5em;
+    text-decoration: none;
 }
 
 .icono{
     margin: 0 2em;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.icono p{
+    color: whitesmoke;
+    opacity: 0;
+    margin: 0;
+    font-size: .8em;
     transition: all 0.5s ease;
 }
 
 .icono:hover{
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
-.icono.icon-power,
-.icono.icon-recycle,
-.icono.icon-coin-dollar{
-    position: relative;
-}
-
-.icono.icon-power::after{
-    content: attr(href);
-    font-size: 0.7em;
-    color: whitesmoke;
-    padding: 0.3em 0.5em;
-    position: absolute;
-    top: 0; 
-    left: 0;
-    opacity: 0;
-    transition: all 0.1s ease;
-    transform: translateX(15%);
-    z-index: 10;
-}
-
-.icono.icon-recycle::after{
-    content: attr(href);
-    font-size: 0.7em;
-    color: whitesmoke;
-    padding: 0.3em 0.5em;
-    position: absolute;
-    top: 0; 
-    left: 0;
-    opacity: 0;
-    transition: all 0.1s ease;
-    transform: translateX(12%);
-    z-index: 10;
-}
-
-.icono.icon-coin-dollar::after{
-    content: attr(href);
-    font-size: 0.7em;
-    color: whitesmoke;
-    padding: 0.3em 0.5em;
-    position: absolute;
-    top: 0; 
-    left: 0;
-    opacity: 0;
-    transition: all 0.1s ease;
-    transform: translateX(5%);
-    z-index: 10;
-}
-
-.icono.icon-power:hover,
-.icono.icon-recycle:hover,
-.icono.icon-coin-dollar:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.icono.icon-power:hover::after,
-.icono.icon-recycle:hover::after,
-.icono.icon-coin-dollar:hover::after{
+.icono:hover p{
     opacity: 1;
-    top: 2em;
-    left: -2em;
 }
 
 .texto{
@@ -338,7 +290,6 @@ h2{
 /*---------------------------------------------------------------------------HOME fin*/
 /*---------------------------------------------------------------------------NOSOTROS inicio*/
 .nosotros{
-    /* background-color: lightblue; */
     display: flex;
     flex-direction: column;
 }
@@ -346,6 +297,14 @@ h2{
 .staff{
     font-weight: 500;
     padding: 1em;
+}
+
+.staff h3, .staff h4{
+    text-align: center;
+}
+
+.staff h4{
+    font-style: italic;
 }
 
 .nosotros h2{
@@ -371,10 +330,6 @@ h2{
     text-align: end;
 }
 
-.descripcion h4{
-    font-style: italic;
-}
-
 .persona figure{
     text-align: center;
     /* background-color: yellow; */
@@ -383,7 +338,7 @@ h2{
 .persona figure img{
     border-radius: 25%;
     box-shadow: 0 0 5px rgba(0,0,0,0.5); 
-    width: 100%;
+    width: 75%;
 }
 /*---------------------------------------------------------------------------NOSOTROS fin*/
 /*---------------------------------------------------------------------------EXPERIENCIA inicio*/
@@ -392,7 +347,8 @@ h2{
 }
 
 .experiencia h3{
-    font-weight: 600;
+    font-weight: 500;
+    margin-left: 2em;
 }
 
 .bikeys{
@@ -821,10 +777,15 @@ h2{
     font-size: 2em;
 }
 /*---------------------------------------------------------------------------ICONOS GENERAL fin*/
-/*---------------------------------------------------------------------------RESPONSIVE Inicio*/
+/*---------------------------------------------------------------------------RESPONSIVE inicio*/
+/*--------------------------------------------------------------------------------768px inicio*/
 @media screen and (max-width:768px){
     .holder{
         max-width: 768px;
+    }
+
+    .holder h2{
+        font-size: 1.5em;
     }
 
     .logoimg img{
@@ -846,6 +807,25 @@ h2{
 
     nav ul li a{
         width: 90%;
+    }
+
+    .descripcion{
+        width: 60%;
+    }
+
+    .persona{
+        width: 40%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .persona figure img{
+        width: 100%;
+    }
+
+    .staff h3,
+    .staff h4{
+        margin: .05em 0;
     }
 
     .especificaciones{
@@ -874,6 +854,10 @@ h2{
         width: 100%;
     }
 
+    .modtexto li{
+        font-size: .9em;
+    }
+
     .modimg img{
         border-radius: 5%;
         width: 60%;
@@ -886,10 +870,6 @@ h2{
     
     .detalle .foto{
         width: 70%;
-    }
-
-    .contactanos h2{
-        font-size: 1.5em;
     }
 
     .columna{
@@ -914,12 +894,28 @@ h2{
         text-align: center;
     }
 }
-
+/*--------------------------------------------------------------------------------768px fin*/
+/*--------------------------------------------------------------------------------480px inicio*/
 @media screen and (max-width: 480px){
     .holder{
         max-width: 480px;
     }
 
+    .holder h2{
+        font-size: 1.3em;
+    }
+
+    .holder h3{
+        font-size: 1em;
+    }
+
+    .holder h4{
+        font-size: .9em;
+    }
+
+    .holder p{
+        font-size: .8em;
+    }
     header{
         padding: 0;
     }
@@ -930,6 +926,7 @@ h2{
         align-items: center;
         padding: 0;
     }
+
     .logo{
         display: flex;
         justify-content: center;
@@ -938,17 +935,20 @@ h2{
     }
 
     .logoimg{
-        width: 50%;
+        width: 47%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
     }
 
     .logoimg img{
         width: 25%;
-        margin: 2% 2em 1% 0;
-        float: right;
+        margin: 0 .5em 0 0;
     }
 
     .logo .bauten{
-        width: 50%;
+        width: 53%;
     }
     
     .bauten h1{
@@ -985,10 +985,6 @@ h2{
         border-radius: 5px;
     }
 
-    footer p{
-        font-size: .7em;
-    }
-
     #homeintro h2{
         padding: 0 .5em;
         font-size: 2em;
@@ -997,6 +993,7 @@ h2{
     .cabezal{
         padding-bottom: .6em;
     }
+
     .iconos .icono{
         font-size: .7em;
     }
@@ -1004,14 +1001,6 @@ h2{
     .texto{
         padding: 15px;
         border-radius: 5px;
-    }
-
-    .texto h2{
-        font-size: 1.4em;
-    }
-    
-    .texto p{
-        font-size: .9em;
     }
 
     #homeintro img{
@@ -1037,19 +1026,7 @@ h2{
         height: 0 auto;
     }
 
-    .nosotros h2{
-        font-size: 1.4em;
-    }
-
-    .nosotros h3{
-        font-size: 1.2em;
-    }
-
-    .nosotros h4{
-        font-size: 1.1em;
-    }
     .nosotros p{
-        font-size: .9em;
         text-align: start;
     }
 
@@ -1066,69 +1043,88 @@ h2{
         width: 100%;
     }
 
-    .experiencia h3{
-        font-size: .9em;
-        margin-left: 2em;
+    .experiencia{
+        padding: 0 .5em; 
     }
 
-    .bikeys{
-        font-size: 1.3em;
+    .video.right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .videobike, .videobikea{
+        margin-left: 1em;
+        margin: .5em;
+        padding: 0;
+    }
+
+    p.bikeys{
+        font-size: 1.2em;
+    }
+
+    .holdergal{
+        padding: 0;
     }
 
     .galeria h3{
-        font-size: .9em;
         margin: 1em 0 .02em 0;
     }
     
     .bloque02 .foto,
     .bloque03 .foto{
-        overflow: hidden;
-        width: 45%;
+        width: 75%;
+        /* margin: .5em 0 0 .5em; */
+    }
+    
+    .bloque02,
+    .bloque03{
+        width: 70%;
+    }
+    
+    .especificaciones .detalle{
+        width: 100%;
     }
 
-    .especificaciones h2{
-        font-size: 1.4em;
-    }
-
-    .especificaciones h3{
-        font-size: 1.2em;
-    }
-
-    .especificaciones h4{
-        font-size: 1.1em;
-    }
-
-    .especificaciones li{
-        font-size: .9em;
-    }
-
-    .especificaciones p{
-        font-size: .9em;
+    .modtexto li{
+        font-size: .8em;
     }
 
     .contactanos h2, .pagos{
-        font-size: 1.2em;
         padding: 0 .2em;
     }
 
     .columna.left{
-        padding: 0 1em;
+        padding: 0 0 0 4em;
     }
 
-    
-    .formulario label{
-        font-size: .9em;
-    }
- 
-    .formulario input, .formulario textarea{
-        width: 80%;
-    }
-
-    .formulario .acciones{
+    .columna.left h3{
         text-align: center;
-        margin-left: 6em;
+        margin-right: 3.5em;
     }
 
+    .formulario label{
+        display: block;
+    }
 
-} 
+    .formulario label{
+        /* background-color: blue; */
+        vertical-align: top;
+        width: 15%;
+        display: inline-block;
+        font-size: 1em;
+    }
+    
+    .formulario input, .formulario textarea{
+        display: block;
+        width: 80%;
+        justify-items: center;
+    }
+    
+    .formulario .acciones{
+        float: right;
+        margin-right: 14.5em;
+    }
+}
+/*--------------------------------------------------------------------------------480px fin*/ 
 /*---------------------------------------------------------------------------RESPONSIVE fin*/

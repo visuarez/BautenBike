@@ -14,9 +14,10 @@ header{
 }
 
 .encabezado{
-    max-width: 960px;       /*Responsive: agregue max ancho*/
+    width: 960px;
     display: flex;
     flex-flow: row nowrap;
+    padding: 0 .5em;
 }
 
 .logo{
@@ -26,15 +27,20 @@ header{
     justify-content: space-between;
 }
 
-.logo img{
-    /* background-color: turquoise; */
+.logoimg{
+    /* background-color: tomato; */
     width: 20%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoimg img{
+    background-color: turquoise;
+    width: 100%;
     border-top-left-radius: 140%;
     border-top-right-radius: 140%;
-    position: relative;
-    top: 0;
-    left: 0;
-    float: left;
+    margin: 2% 0;
 }
 
 .logo .bauten{
@@ -48,13 +54,13 @@ header{
 .logo h1{
     font-weight: 600;
     font-size: 1.5em;
-    margin-top: 1em;
-    margin-bottom: 0;
+    margin: 7% 0 0 0;
 }
 
 .logo .ebike{
     /* background-color: violet; */
     font-size: .9em;
+    margin-left: .5%;
 }
 
 .botonera{
@@ -74,7 +80,7 @@ nav ul{
 nav ul li{
     /* background-color: greenyellow; */
     display: flex;
-    width: 110px;
+    width: 20%;
     border-radius: 15px;
 }
 
@@ -114,6 +120,7 @@ footer{
 .holder{
     max-width: 960px;    /*RESPONSIVE: Agregue max-*/
     margin: 0 auto;
+    padding: 0 .5em;
     /* background-color: yellow; */
 }
 
@@ -160,7 +167,7 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: whitesmoke;
     padding: 0 0 2em 0;
-    width: 100%;
+    max-width: 100%;    /*RESPONSIVE: Agregue max-*/
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     animation: bienvenidos 2s ease;
@@ -280,13 +287,14 @@ h2{
     background-color: black;
     margin: 0 auto;
     border-radius: 10px;
+    max-width: 100%;     /*RESPONSIVE: Agregue todo*/
 }
 
 #parallax02{
     background: url(../img/detalle3.jpg) 60% fixed;
     background-size: 67%;
     height: 700px;
-    width: 90%;
+    max-width: 90%;    /*RESPONSIVE: Agregue max-*/
     margin: 0 auto;
 }
 
@@ -294,7 +302,7 @@ h2{
     background: url(../img/paisaje1.jpg) 67% fixed;
     background-size: 70%;
     height: 700px;
-    width: 90%;
+    max-width: 90%;    /*RESPONSIVE: Agregue max-*/
     margin: 0 auto;
 }
 
@@ -302,7 +310,7 @@ h2{
     background: url(../img/mural2.jpg) 60% fixed;
     background-size: 67%;
     height: 700px;
-    width: 90%;
+    max-width: 90%;    /*RESPONSIVE: Agregue max-*/
     margin: 0 auto;
 }
 /*---------------------------------------------------------------------------HOME fin*/
@@ -370,7 +378,7 @@ h2{
     font-family: fantasy;
     color: green;
     font-size: 3em;
-    margin-left: 6.5em;
+    margin-left: 30%;
     animation-name: bike;
     animation-duration: 2s;
 }
@@ -378,7 +386,7 @@ h2{
 @keyframes bike{
     from{margin-left: 100%;
         width: 100%;}
-    to{margin-left: 6.5em;
+    to{margin-left: 30%;
         width: 100%;}
 }
 
@@ -464,7 +472,15 @@ h2{
 }
 
 .especificaciones h2{
-    margin: .5em 0;
+    margin: .6em 0;
+    font-size: 1.7em;
+}
+
+.especificaciones h3{
+    text-align: start;
+    color: green;
+    font-size: 1.6em;
+    margin-left: 3em;
 }
 
 .modelo01, .modelo02{
@@ -501,16 +517,15 @@ h2{
         width: 100%;}
 }
 
-.bb73 h2, .bb273 h2{
-    text-align: center;
-    color: green;
+.modtexto .modimg{
+    width: 50%;
 }
 
-.bb73, .bb273{
+.modtexto{
     text-align: start;
 }
 
-.bb73img img, .bb273img img{
+.modimg img{
     border-radius: 5%;
     width: 95%;
 }
@@ -525,9 +540,10 @@ h2{
     display: flex;
     flex-flow: row wrap;
     gap: 1em;
-    justify-content: space-evenly;
-    padding: 1em;
+    justify-content: center;
+    padding: 1em 0;
     background-color:black;
+    border-radius: 5px;
 }
 
 .detalle .foto{
@@ -542,7 +558,7 @@ h2{
 
 .detalle .foto img{
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .tecnicas ul li{
@@ -598,7 +614,7 @@ h2{
 }
 
 .columna{
-     width: 50%;
+    width: 50%;
     box-sizing: border-box;
     padding: 0.6em;
 }
@@ -642,21 +658,35 @@ h2{
     cursor: pointer;
 }
 
+.columna.right h3{
+    margin-bottom: 0;
+}
+
+.columna.right .directo{
+    display: flex;
+    justify-content: center;
+}
+
+.columna.right .directo ul{
+    padding: 0;
+    margin: 0;
+}
+
 .columna.right ul li{
     font-size: 1em;
     list-style: none;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin: 1em 0 1em 6.5em;
+    margin: 1em 0;
 }
 
 .columna.right .redes h3{
-    margin: 3em 0 0 0;
+    margin: 2em 0 0 0;
 }
 
 .columna.right .sociales{
-    background-color: rgba(12, 243, 70, 0.097);;
+    background-color: rgba(12, 243, 70, 0.097);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
     border: 1px solid black;
     margin: 1em;
@@ -667,11 +697,10 @@ h2{
     flex-flow: row nowrap;
     margin-left: 1em;
 }
-
+ 
 .columna.right .sociales a{
     display: flex;
     text-align: center;
-    margin: 0;
     text-decoration: none;
 }
 /*---------------------------------------------------------------------------CONTACTO fin*/
@@ -776,3 +805,152 @@ h2{
     cursor: pointer;
 }
 /*---------------------------------------------------------------------------BOTON SUBIR GENERAL fin*/
+/*---------------------------------------------------------------------------RESPONSIVE Inicio*/
+@media screen and (max-width:768px){
+    .holder{
+        max-width: 768px;
+    }
+
+    .logoimg img{
+        margin-top: 16%;
+    }
+    
+    .logo h1{
+        font-size: 1.2em;
+    }
+    
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav ul li{
+        width: 15%;
+    }
+
+    nav ul li a{
+        width: 90%;
+    }
+
+    .especificaciones{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .especificaciones h2,
+    .especificaciones h3{
+        text-align: center;
+        margin: .5em 0;
+    }
+
+    .modelo01{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .modelo02{
+        display: flex;
+        flex-flow: column-reverse nowrap;
+    }
+
+    .modtexto{
+        width: 100%;
+    }
+
+    .modimg img{
+        border-radius: 5%;
+        width: 60%;
+        margin-bottom: .5em;
+    }
+
+    .especificaciones .detalle{
+        width: 80%;
+    }
+    
+    .detalle .foto{
+        width: 70%;
+    }
+
+    .contactanos h2{
+        font-size: 1.5em;
+    }
+
+    .columna{
+        width: 100%;
+    }
+
+    .columna.left{
+        border: none;
+        padding: 0 6em;
+    }
+
+    .columna.right{
+        border-top: 1px solid black;
+    }
+
+    .formulario input[type="submit"]{
+    margin: 0;
+    float: none;
+    }
+
+    .formulario .acciones{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .holder{
+        max-width: 480px;
+    }
+
+    header{
+        padding: 0;
+    }
+    .encabezado{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: white;
+    }
+
+    .logoimg{
+        width: 50%;
+    }
+
+    .logoimg img{
+        width: 30%;
+        margin: 0 2em 1% 0;
+        float: right;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .logo .bauten{
+        width: 50%;
+        color: black;
+    }
+    
+    .bauten h1{
+        margin-top: 5%;
+    }
+        
+    .botonera{
+        width: 100%;
+        padding: .3em 0;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+} 
+/*---------------------------------------------------------------------------RESPONSIVE fin*/

@@ -991,11 +991,11 @@ h2{
     }
 
     .texto h2{
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     
     .texto p{
-        font-size: 1em;
+        font-size: .9em;
     }
 
     #homeintro img{
@@ -1019,6 +1019,34 @@ h2{
         background: url(../img/mural1.jpg) 0 50% fixed;
         background-size: 130%;
         height: 0 auto;
+    }
+
+    .nosotros h2{
+        font-size: 1.4em;
+    }
+
+    .nosotros h3{
+        font-size: 1.2em;
+    }
+
+    .nosotros h4{
+        font-size: 1.1em;
+    }
+    .nosotros p{
+        font-size: .9em;
+    }
+
+    .personas{
+        display: inline-flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .descripcion, .persona{
+        width: 100%;
     }
 } 
 /*---------------------------------------------------------------------------RESPONSIVE fin*/

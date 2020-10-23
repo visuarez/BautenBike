@@ -919,7 +919,6 @@ h2{
         justify-content: center;
         width: 100%;
         margin-bottom: 1%;
-        /* background-color: white; */
     }
 
     .logoimg{
@@ -1060,65 +1059,60 @@ h2{
         font-size: 1.3em;
     }
 
-
-
-
-
-
-
-    /* .galeria{
-        color: whitesmoke;
-        background-color: black;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0 1em 1em 1em;
-    } */
-    
     .galeria h3{
         font-size: .9em;
         margin: 1em 0 .02em 0;
     }
-    
-    /* .galeria .bloque01{
-        overflow: hidden;
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        border-radius: 5px;
-    } */
-/*     
-    .galeria .bloque02,
-    .galeria .bloque03{
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    } */
     
     .bloque02 .foto,
     .bloque03 .foto{
         overflow: hidden;
         width: 45%;
     }
-        /* display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        margin: .5em 0 0 .5em;
-        border: 1px solid black;
-        border-radius: 5px; */
-    /* }
-    
-    .bloque02,
-    .bloque03{
-        width: 29%;
-        display: flex;
-        flex-flow: row wrap;
-        gap: 1em;
+
+    .especificaciones h2{
+        font-size: 1.4em;
     }
+
+    .especificaciones h3{
+        font-size: 1.2em;
+    }
+
+    .especificaciones h4{
+        font-size: 1.1em;
+    }
+
+    .especificaciones li{
+        font-size: .9em;
+    }
+
+    .especificaciones p{
+        font-size: .9em;
+    }
+
+    .contactanos h2, .pagos{
+        font-size: 1.2em;
+        padding: 0 .2em;
+    }
+
+    .columna.left{
+        padding: 0 1em;
+    }
+
     
-    .galeria .foto img{
-        width: 100%;
-    } */
+    .formulario label{
+        font-size: .9em;
+    }
+ 
+    .formulario input, .formulario textarea{
+        width: 80%;
+    }
+
+    .formulario .acciones{
+        text-align: center;
+        margin-left: 6em;
+    }
+
+
 } 
 /*---------------------------------------------------------------------------RESPONSIVE fin*/

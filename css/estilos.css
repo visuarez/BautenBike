@@ -919,6 +919,7 @@ h2{
         display: flex;
         justify-content: center;
         width: 100%;
+        margin-bottom: 1%;
         /* background-color: white; */
     }
 
@@ -927,8 +928,8 @@ h2{
     }
 
     .logoimg img{
-        width: 30%;
-        margin: 0 2em 1% 0;
+        width: 25%;
+        margin: 2% 2em 1% 0;
         float: right;
         /* border-top-left-radius: 0; */
         /* border-top-right-radius: 0; */
@@ -946,6 +947,7 @@ h2{
     .botonera{
         width: 100%;
         padding: .3em;
+        border-top: 1px solid whitesmoke;
     }
 
     nav ul{
@@ -955,11 +957,20 @@ h2{
 
     nav ul li{
         width: 12.5%;
+        border-radius: 5px;
     }
 
     nav ul li a{
         font-size: .7em;
         line-height: 9px;
+    }
+
+    nav ul li a:hover{
+        border-radius: 5px;
+    }
+
+    nav ul li a.activo{
+        border-radius: 5px;
     }
 } 
 /*---------------------------------------------------------------------------RESPONSIVE fin*/

@@ -168,8 +168,7 @@ h2{
     color: whitesmoke;
     padding: 0 0 2em 0;
     max-width: 100%;    /*RESPONSIVE: Agregue max-*/
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
     animation: bienvenidos 2s ease;
     animation-fill-mode: forwards; 
 }
@@ -972,6 +971,54 @@ h2{
 
     nav ul li a.activo{
         border-radius: 5px;
+    }
+
+    #homeintro h2{
+        padding: 0 .5em;
+        font-size: 2em;
+    }
+
+    .cabezal{
+        padding-bottom: .6em;
+    }
+    .iconos .icono{
+        font-size: .7em;
+    }
+
+    .texto{
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .texto h2{
+        font-size: 1.5em;
+    }
+    
+    .texto p{
+        font-size: 1em;
+    }
+
+    #homeintro img{
+        width: 90%;
+        height: auto;
+    }
+
+    #parallax02{
+        background: url(../img/detalle3.jpg) 0 50% fixed;
+        background-size: 150%;
+        height: 0 auto;
+    }
+
+    #parallax03{
+        background: url(../img/painegrahojas.jpeg) 0 50% fixed;
+        background-size: 150%;
+        height: 0 auto;
+    }
+
+    #parallax04{
+        background: url(../img/mural1.jpg) 0 50% fixed;
+        background-size: 130%;
+        height: 0 auto;
     }
 } 
 /*---------------------------------------------------------------------------RESPONSIVE fin*/

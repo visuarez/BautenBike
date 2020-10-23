@@ -107,13 +107,36 @@ nav ul li a.activo{
     border-radius: 15px;
 }
 
+.up{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    clear: both;
+    padding: 1em 0;
+}
+
+.up a, .up p{
+    margin: 0;
+    opacity: .3;
+    transition: all 1s ease;
+}
+
+.up a:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
 footer{
     overflow: hidden;
     background-color: rgba(211, 211, 211, 0.474);
     color: rgba(0,0,0,0.4);
     clear: both;
     padding: 0.2em;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     text-align: center;
 }
 
@@ -720,7 +743,7 @@ h2{
 .icon-power:before,
 .icon-recycle:before,
 .icon-coin-dollar:before,
-.icon-arrow-up-circle:before,
+.icon-chevron-up:before,
 .icon-documents:before,
 .icon-mobile:before,
 .icon-whatsapp:before,
@@ -755,11 +778,12 @@ h2{
     font-size: 2em;
 }
 
-.icon-arrow-up-circle:before{
-    content: "\e90a";
-    color: green;
+.icon-chevron-up:before {
+    content: "\e90b";
+    color: lightgray;
     text-shadow: 1px 1px 1px black;
     font-size: 3em;
+    margin-right: 0;
 }
 
 .icon-documents:before {
@@ -797,14 +821,6 @@ h2{
     font-size: 2em;
 }
 /*---------------------------------------------------------------------------ICONOS GENERAL fin*/
-/*---------------------------------------------------------------------------BOTON SUBIR GENERAL inicio*/
-.up .icon-arrow-up-circle{
-    clear: both;
-    margin-left: 90%;
-    width: 100%;
-    cursor: pointer;
-}
-/*---------------------------------------------------------------------------BOTON SUBIR GENERAL fin*/
 /*---------------------------------------------------------------------------RESPONSIVE Inicio*/
 @media screen and (max-width:768px){
     .holder{

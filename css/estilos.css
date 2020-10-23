@@ -403,7 +403,7 @@ h2{
 
 .galeria .bloque01{
     overflow: hidden;
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: center;
     border-radius: 5px;
@@ -411,7 +411,7 @@ h2{
 
 .galeria .bloque02,
 .galeria .bloque03{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
 }

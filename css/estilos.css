@@ -952,5 +952,13 @@ h2{
         display: flex;
         justify-content: space-evenly;
     }
+
+    nav ul li{
+        width: 13%;
+    }
+
+    nav ul li a{
+        font-size: .8em;
+    }
 } 
 /*---------------------------------------------------------------------------RESPONSIVE fin*/

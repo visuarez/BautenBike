@@ -919,7 +919,7 @@ h2{
         display: flex;
         justify-content: center;
         width: 100%;
-        background-color: white;
+        /* background-color: white; */
     }
 
     .logoimg{
@@ -930,13 +930,13 @@ h2{
         width: 30%;
         margin: 0 2em 1% 0;
         float: right;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        /* border-top-left-radius: 0; */
+        /* border-top-right-radius: 0; */
     }
 
     .logo .bauten{
         width: 50%;
-        color: black;
+        /* color: black; */
     }
     
     .bauten h1{
@@ -954,7 +954,7 @@ h2{
     }
 
     nav ul li{
-        width: 11%;
+        width: 12.5%;
     }
 
     nav ul li a{

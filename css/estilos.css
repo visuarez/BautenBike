@@ -761,6 +761,7 @@ h2{
     text-shadow: 1px 1px 1px black;
     font-size: 3em;
 }
+
 .icon-documents:before {
     content: "\e006";
     margin-right: 1em;
@@ -896,7 +897,6 @@ h2{
     .formulario .acciones{
         text-align: center;
     }
-
 }
 
 @media screen and (max-width: 480px){
@@ -930,13 +930,10 @@ h2{
         width: 25%;
         margin: 2% 2em 1% 0;
         float: right;
-        /* border-top-left-radius: 0; */
-        /* border-top-right-radius: 0; */
     }
 
     .logo .bauten{
         width: 50%;
-        /* color: black; */
     }
     
     .bauten h1{
@@ -971,6 +968,10 @@ h2{
 
     nav ul li a.activo{
         border-radius: 5px;
+    }
+
+    footer p{
+        font-size: .7em;
     }
 
     #homeintro h2{
@@ -1034,6 +1035,7 @@ h2{
     }
     .nosotros p{
         font-size: .9em;
+        text-align: start;
     }
 
     .personas{
@@ -1048,5 +1050,75 @@ h2{
     .descripcion, .persona{
         width: 100%;
     }
+
+    .experiencia h3{
+        font-size: .9em;
+        margin-left: 2em;
+    }
+
+    .bikeys{
+        font-size: 1.3em;
+    }
+
+
+
+
+
+
+
+    /* .galeria{
+        color: whitesmoke;
+        background-color: black;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1em 1em 1em;
+    } */
+    
+    .galeria h3{
+        font-size: .9em;
+        margin: 1em 0 .02em 0;
+    }
+    
+    /* .galeria .bloque01{
+        overflow: hidden;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+    } */
+/*     
+    .galeria .bloque02,
+    .galeria .bloque03{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    } */
+    
+    .bloque02 .foto,
+    .bloque03 .foto{
+        overflow: hidden;
+        width: 45%;
+    }
+        /* display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: .5em 0 0 .5em;
+        border: 1px solid black;
+        border-radius: 5px; */
+    /* }
+    
+    .bloque02,
+    .bloque03{
+        width: 29%;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1em;
+    }
+    
+    .galeria .foto img{
+        width: 100%;
+    } */
 } 
 /*---------------------------------------------------------------------------RESPONSIVE fin*/

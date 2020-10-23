@@ -945,7 +945,7 @@ h2{
         
     .botonera{
         width: 100%;
-        padding: .3em 0;
+        padding: .3em;
     }
 
     nav ul{
@@ -954,11 +954,12 @@ h2{
     }
 
     nav ul li{
-        width: 13%;
+        width: 11%;
     }
 
     nav ul li a{
-        font-size: .8em;
+        font-size: .7em;
+        line-height: 9px;
     }
 } 
 /*---------------------------------------------------------------------------RESPONSIVE fin*/

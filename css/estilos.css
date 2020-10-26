@@ -926,6 +926,7 @@ h2{
     .holder p{
         font-size: .8em;
     }
+
     header{
         padding: 0;
     }
@@ -1128,6 +1129,25 @@ h2{
         max-width: 360px;
     }
 
+    #homeintro h2{
+        font-size: 1.3em;
+    }
+    .holder h2{
+        font-size: 1.1em;
+    }
+
+    .holder h3{
+        font-size: .9em;
+    }
+
+    .holder h4{
+        font-size: .8em;
+    }
+
+    .holder p{
+        font-size: .7em;
+    }
+
     .columna.left,
     .formulario{
         padding: 0;
@@ -1139,6 +1159,10 @@ h2{
         float: none;
         display: block;
         width: 100%;
+    }
+
+    .formulario input{
+        padding: .5em;
     }
 
     .formulario .acciones{
